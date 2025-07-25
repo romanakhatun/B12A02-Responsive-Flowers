@@ -16,7 +16,6 @@ body {
   font-family: "Inter", sans-serif;
   background: rgb(245, 248, 255);
 }
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -38,15 +37,49 @@ body {
   animation: spin 6s linear infinite;
 }
 
-.deal-bloom {
-  /* background: rgba(0, 0, 0, 0.6), url(./assets/deal-bloom.png); */
-}
-
 @keyframes spin {
   0% {
     transform: translate(50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(50%, -50%) rotate(360deg);
+  }
+}
+
+/* footer  section*/
+.footer .logo {
+  grid-area: logo;
+}
+.footer .menu {
+  grid-area: menu;
+}
+.footer .policy {
+  grid-area: policy;
+}
+.footer .icon {
+  grid-area: icon;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: grid;
+    grid-template-areas:
+      "logo logo logo logo"
+      "menu policy policy policy"
+      "icon icon icon icon";
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    display: grid;
+    grid-template-areas: "logo menu policy icon ";
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  }
+
+  .footer .menu {
+    justify-self: center;
+  }
+
+  .footer .icon {
+    justify-self: end;
   }
 }

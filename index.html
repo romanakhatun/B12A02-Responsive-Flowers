@@ -10,7 +10,11 @@
   <body>
     <header class="container flex justify-between items-center px-4 py-7">
       <a href="#" class="logo">
-        <img src="./assets/logo.png" alt="Lilly Blossom" />
+        <img
+          class="w-[63px] h-[38px] lg:w-[135px] lg:h-[82px]"
+          src="./assets/logo.png"
+          alt="Lilly Blossom"
+        />
       </a>
       <nav>
         <ul class="md:grid grid-cols-4 items-center gap-2">
@@ -255,14 +259,16 @@
       </section>
 
       <section
-        class="bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center py-15 flex flex-col justify-center items-center h-[275px] lg:h-[533px]"
+        class="bg-[url('./assets/news-letter-bg.png')] bg-cover py-15 flex flex-col justify-center items-center h-[275px] lg:h-[533px]"
       >
-        <h1 class="mb-3 font-bold text-2xl lg:text-4xl xl:text-6xl text-white">
+        <h1
+          class="mb-3 font-bold text-2xl lg:text-4xl xl:text-5xl text-white text-center"
+        >
           Join the colorful Bunch
         </h1>
         <form action="#" class="flex items-center mt-6">
           <input
-            class="outline-none bg-white px-5 py-2"
+            class="outline-none bg-white px-5 py-2 w-[160px] md:w-[300px] lg:w-[600px]"
             type="email"
             name="email"
             id="email"
@@ -276,6 +282,63 @@
           />
         </form>
       </section>
+      <footer class="container px-4 py-7 footer">
+        <div class="logo">
+          <a href="#" class="logo">
+            <img
+              class="w-[135px] h-[82px]"
+              src="./assets/logo.png"
+              alt="Lilly Blossom"
+            />
+          </a>
+          <p class="mt-4 mb-5 lg:text-lg xl:text-xl">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop.
+          </p>
+        </div>
+        <nav class="menu">
+          <ul class="text-[#6B7280] flex flex-col gap-8">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <nav class="mt-5 policy md:mt-0">
+          <ul class="text-[#6B7280] flex flex-col gap-8">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-6 icon mt-5">
+          <img
+            class="w-[36px] h-[36px]"
+            src="./assets/icon-linkedin.png"
+            alt="Linkedin"
+          />
+          <img
+            class="w-[24px] h-[24px]"
+            src="./assets/icon-twitter.png"
+            alt="Twitter"
+          />
+          <img
+            class="w-[36px] h-[36px]"
+            src="./assets/icon-facebook.png"
+            alt="Facebook"
+          />
+          <img
+            class="w-[36px] h-[36px]"
+            src="./assets/icon-youtube.png"
+            alt="YouTube"
+          />
+        </div>
+      </footer>
     </main>
 
     <script>
